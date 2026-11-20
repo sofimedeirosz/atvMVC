@@ -2,17 +2,25 @@
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biblioteca</title>
 </head>
 <body>
-<h1>Sistema de Biblioteca</h1>
-<nav>
-    <a th:href="@{/livros}">Livros</a>
-    <a th:href="@{/autores}">Autores</a>
-    <a th:href="@{/categorias}">Categorias</a>
-    <a th:href="@{/emprestimos}">Empréstimos</a>
-    <a th:href="@{/usuarios}">Usuários</a>
-</nav>
-<p>Os dados ficam na memória e são apagados ao reiniciar a aplicação.</p>
+    <header>
+        <h1>Sistema de Biblioteca</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros}">Livros</a></li>
+                <li><a th:href="@{/autores}">Autores</a></li>
+                <li><a th:href="@{/categorias}">Categorias</a></li>
+                <li><a th:href="@{/emprestimos}">Empréstimos</a></li>
+                <li><a th:href="@{/usuarios}">Usuários</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Início</h2>
+        <p>Os dados ficam na memória e são apagados ao reiniciar a aplicação.</p>
+    </main>
 </body>
 </html>

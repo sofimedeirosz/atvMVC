@@ -2,7 +2,6 @@ package com.example.jesus.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.example.jesus.model.Categoria;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,8 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -27,14 +25,24 @@ public class CategoriaController {
     }
 
     @PostMapping("/cadastrar")
-    public String cadastrar(@RequestBody Categoria categoria) {
+    public String cadastrar(@ModelAttribute Categoria categoria) {
         categorias.add(categoria);
         return "redirect:/categorias";
     }
 
-    @PutMapping("/editar/{indice}")
+    @GetMapping("/editar/{indice}")
+    public String formularioEditar(@PathVariable int indice, Model model) {
+        if (indice >= 0 && indice < categorias.size()) {
+            model.addAttribute("categoria", categorias.get(indice));
+            model.addAttribute("indice", indice);
+            return "categorias/editar";
+        }
+        return "redirect:/categorias";
+    }
+
+    @PostMapping("/editar/{indice}")
     public String editar(@PathVariable int indice,
-                         @RequestBody Categoria categoria) {
+                         @ModelAttribute Categoria categoria) {
         if (indice >= 0 && indice < categorias.size()) {
             categorias.set(indice, categoria);
         }

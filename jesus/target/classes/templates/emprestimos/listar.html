@@ -2,27 +2,66 @@
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Empréstimos</title>
 </head>
 <body>
-<h1>Empréstimos</h1>
-<p><a th:href="@{/livros/inicio}">Início</a></p>
-<table border="1">
-    <thead>
-    <tr>
-        <th>Índice</th>
-        <th>Status</th>
-        <th>Data</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="emprestimo, item : ${emprestimos}">
-        <td th:text="${item.index}"></td>
-        <td th:text="${emprestimo.statusEmprestimo}"></td>
-        <td th:text="${emprestimo.dataEmprestimo}"></td>
-    </tr>
-    </tbody>
-</table>
-<p th:if="${#lists.isEmpty(emprestimos)}">Nenhum registro cadastrado.</p>
+    <header>
+        <h1>Empréstimos</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="cadastro">
+            <h2 id="cadastro">Cadastro</h2>
+            <form th:action="@{/emprestimos/cadastrar}" method="post">
+                <fieldset>
+                    <legend>Dados do empréstimo</legend>
+                    <p>
+                        <label for="statusEmprestimo">Status:</label>
+                        <input type="text" id="statusEmprestimo" name="statusEmprestimo" required>
+                    </p>
+                    <p>
+                        <label for="dataEmprestimo">Data:</label>
+                        <input type="text" id="dataEmprestimo" name="dataEmprestimo" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </form>
+        </section>
+        <section aria-labelledby="registros">
+            <h2 id="registros">Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Índice</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="emprestimo, item : ${emprestimos}">
+                        <td th:text="${item.index}"></td>
+                        <td th:text="${emprestimo.statusEmprestimo}"></td>
+                        <td th:text="${emprestimo.dataEmprestimo}"></td>
+                        <td>
+                            <a th:href="@{/emprestimos/editar/{indice}(indice=${item.index})}">Editar</a>
+                            <form th:action="@{/emprestimos/excluir/{indice}(indice=${item.index})}" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p th:if="${#lists.isEmpty(emprestimos)}">Nenhum registro cadastrado.</p>
+        </section>
+    </main>
 </body>
 </html>

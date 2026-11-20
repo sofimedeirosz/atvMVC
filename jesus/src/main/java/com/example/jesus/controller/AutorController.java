@@ -2,7 +2,6 @@ package com.example.jesus.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.example.jesus.model.Autor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,8 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -27,14 +25,24 @@ public class AutorController {
     }
 
     @PostMapping("/cadastrar")
-    public String cadastrar(@RequestBody Autor autor) {
+    public String cadastrar(@ModelAttribute Autor autor) {
         autores.add(autor);
         return "redirect:/autores";
     }
 
-    @PutMapping("/editar/{indice}")
+    @GetMapping("/editar/{indice}")
+    public String formularioEditar(@PathVariable int indice, Model model) {
+        if (indice >= 0 && indice < autores.size()) {
+            model.addAttribute("autor", autores.get(indice));
+            model.addAttribute("indice", indice);
+            return "autores/editar";
+        }
+        return "redirect:/autores";
+    }
+
+    @PostMapping("/editar/{indice}")
     public String editar(@PathVariable int indice,
-                         @RequestBody Autor autor) {
+                         @ModelAttribute Autor autor) {
         if (indice >= 0 && indice < autores.size()) {
             autores.set(indice, autor);
         }

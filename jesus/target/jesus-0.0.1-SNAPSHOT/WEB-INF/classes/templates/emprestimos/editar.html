@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editar empréstimo</title>
+</head>
+<body>
+    <header>
+        <h1>Editar empréstimo</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+                <li><a th:href="@{/emprestimos}">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form th:action="@{/emprestimos/editar/{indice}(indice=${indice})}" method="post">
+            <fieldset>
+                <legend>Dados do empréstimo</legend>
+                <p>
+                    <label for="statusEmprestimo">Status:</label>
+                    <input type="text" id="statusEmprestimo" name="statusEmprestimo" th:value="${emprestimo.statusEmprestimo}" required>
+                </p>
+                <p>
+                    <label for="dataEmprestimo">Data:</label>
+                    <input type="text" id="dataEmprestimo" name="dataEmprestimo" th:value="${emprestimo.dataEmprestimo}" required>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Salvar</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
+

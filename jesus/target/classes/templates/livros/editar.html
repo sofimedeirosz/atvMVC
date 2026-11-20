@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editar livro</title>
+</head>
+<body>
+    <header>
+        <h1>Editar livro</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+                <li><a th:href="@{/livros}">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form th:action="@{/livros/editar/{indice}(indice=${indice})}" method="post">
+            <fieldset>
+                <legend>Dados do livro</legend>
+                <p>
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" th:value="${livro.titulo}" required>
+                </p>
+                <p>
+                    <label for="autor">Autor:</label>
+                    <input type="text" id="autor" name="autor" th:value="${livro.autor}" required>
+                </p>
+                <p>
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" th:value="${livro.isbn}" required>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Salvar</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
+

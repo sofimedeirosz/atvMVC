@@ -2,6 +2,7 @@ package com.example.jesus;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,8 @@ import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -25,15 +28,38 @@ class CrudControllersTests {
     @Autowired
     private MockMvc mvc;
 
-    record Caso(String base, String cadastro, String edicao, String original, String alterado) {}
+    record Caso(String base, String atributo, MultiValueMap<String, String> cadastro,
+                MultiValueMap<String, String> edicao, String original, String alterado) {}
 
     static Stream<Caso> casos() {
         return Stream.of(
-                new Caso("livros", "{\"titulo\":\"Dom Casmurro\",\"autor\":\"Machado de Assis\",\"isbn\":\"9788535914849\"}", "{\"titulo\":\"Memorias Postumas\",\"autor\":\"Machado de Assis\",\"isbn\":\"9788535914856\"}", "Dom Casmurro", "Memorias Postumas"),
-                new Caso("autores", "{\"nome\":\"Machado de Assis\",\"nacionalidade\":\"Brasileira\",\"obrasPublicadas\":10}", "{\"nome\":\"Raphael Montes\",\"nacionalidade\":\"Brasileira\",\"obrasPublicadas\":12}", "Machado de Assis", "Raphael Montes"),
-                new Caso("categorias", "{\"genero\":\"Terror\"}", "{\"genero\":\"Romance\"}", "Terror", "Romance"),
-                new Caso("emprestimos", "{\"statusEmprestimo\":\"Emprestado\",\"dataEmprestimo\":\"20/11/2026\"}", "{\"statusEmprestimo\":\"Devolvido\",\"dataEmprestimo\":\"21/11/2026\"}", "Emprestado", "Devolvido"),
-                new Caso("usuarios", "{\"nome\":\"Sofia\",\"cpf\":\"11122233344\",\"usuario\":\"sofia123\",\"senha\":\"SegredoInicial123\"}", "{\"nome\":\"Sofia Silva\",\"cpf\":\"55566677788\",\"usuario\":\"sofia.silva\",\"senha\":\"NovoSegredo456\"}", "sofia123", "sofia.silva"));
+                new Caso("livros", "livro",
+                        campos("titulo", "Dom Casmurro", "autor", "Machado de Assis", "isbn", "9788535914849"),
+                        campos("titulo", "Memorias Postumas", "autor", "Machado de Assis", "isbn", "9788535914856"),
+                        "Dom Casmurro", "Memorias Postumas"),
+                new Caso("autores", "autor",
+                        campos("nome", "Machado de Assis", "nacionalidade", "Brasileira", "obrasPublicadas", "10"),
+                        campos("nome", "Raphael Montes", "nacionalidade", "Brasileira", "obrasPublicadas", "12"),
+                        "Machado de Assis", "Raphael Montes"),
+                new Caso("categorias", "categoria",
+                        campos("genero", "Terror"), campos("genero", "Romance"),
+                        "Terror", "Romance"),
+                new Caso("emprestimos", "emprestimo",
+                        campos("statusEmprestimo", "Emprestado", "dataEmprestimo", "20/11/2026"),
+                        campos("statusEmprestimo", "Devolvido", "dataEmprestimo", "21/11/2026"),
+                        "Emprestado", "Devolvido"),
+                new Caso("usuarios", "usuario",
+                        campos("nome", "Sofia", "cpf", "11122233344", "usuario", "sofia123", "senha", "SegredoInicial123"),
+                        campos("nome", "Sofia Silva", "cpf", "55566677788", "usuario", "sofia.silva", "senha", "NovoSegredo456"),
+                        "sofia123", "sofia.silva"));
+    }
+
+    private static MultiValueMap<String, String> campos(String... pares) {
+        MultiValueMap<String, String> campos = new LinkedMultiValueMap<>();
+        for (int i = 0; i < pares.length; i += 2) {
+            campos.add(pares[i], pares[i + 1]);
+        }
+        return campos;
     }
 
     @Test
@@ -49,50 +75,106 @@ class CrudControllersTests {
 
     @ParameterizedTest
     @MethodSource("casos")
-    void crudComJsonEIndices(Caso caso) throws Exception {
+    void crudComFormulariosEIndices(Caso caso) throws Exception {
         String base = "/" + caso.base();
-        assertThat(registros(listar(caso))).isEmpty();
+        MvcResult resultado = listar(caso);
+        assertThat(registros(resultado)).isEmpty();
+        assertThat(html(resultado)).contains("action=\"" + base + "/cadastrar\"", "method=\"post\"",
+                "href=\"/livros/inicio\"");
+        for (String campo : caso.cadastro().keySet()) {
+            assertThat(html(resultado)).contains("name=\"" + campo + "\"");
+        }
 
         // Dois cadastros permitem conferir o deslocamento dos índices na exclusão.
         for (int i = 0; i < 2; i++) {
             mvc.perform(post(base + "/cadastrar")
-                            .contentType(MediaType.APPLICATION_JSON).content(caso.cadastro()))
+                            .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                            .params(caso.cadastro()))
                     .andExpect(status().isFound())
                     .andExpect(redirectedUrl(base));
         }
-        MvcResult resultado = listar(caso);
+        resultado = listar(caso);
         assertThat(registros(resultado)).hasSize(2);
-        assertThat(html(resultado)).contains(caso.original(), "<td>0</td>", "<td>1</td>");
+        assertThat(html(resultado)).contains(caso.original(), "<td>0</td>", "<td>1</td>",
+                "href=\"" + base + "/editar/0\"", "href=\"" + base + "/editar/1\"",
+                "action=\"" + base + "/excluir/0\"", "action=\"" + base + "/excluir/1\"",
+                "<input type=\"hidden\" name=\"_method\" value=\"DELETE\">");
+        verificarEdicaoPreenchida(caso, caso.cadastro());
 
         for (int indice : new int[] {-1, 2}) {
-            mvc.perform(put(base + "/editar/" + indice)
-                            .contentType(MediaType.APPLICATION_JSON).content(caso.edicao()))
+            mvc.perform(get(base + "/editar/" + indice))
                     .andExpect(status().isFound())
                     .andExpect(redirectedUrl(base));
-            mvc.perform(delete(base + "/excluir/" + indice))
+            mvc.perform(post(base + "/editar/" + indice)
+                            .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                            .params(caso.edicao()))
+                    .andExpect(status().isFound())
+                    .andExpect(redirectedUrl(base));
+            mvc.perform(post(base + "/excluir/" + indice)
+                            .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                            .param("_method", "DELETE"))
+                    .andExpect(handler().methodName("excluir"))
                     .andExpect(status().isFound())
                     .andExpect(redirectedUrl(base));
         }
         assertThat(registros(listar(caso))).hasSize(2);
         assertThat(html(listar(caso))).contains(caso.original()).doesNotContain(caso.alterado());
 
-        mvc.perform(delete(base + "/excluir/0"))
-                .andExpect(status().isFound()).andExpect(redirectedUrl(base));
+        // A exclusão precisa passar pelo DELETE, inclusive quando vem de um formulário.
+        mvc.perform(post(base + "/excluir/0")).andExpect(status().isMethodNotAllowed());
+        mvc.perform(get(base + "/excluir/0")).andExpect(status().isMethodNotAllowed());
+        assertThat(registros(listar(caso))).hasSize(2);
+        mvc.perform(post(base + "/excluir/0")
+                        .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                        .param("_method", "DELETE"))
+                .andExpect(handler().methodName("excluir"))
+                .andExpect(status().isFound())
+                .andExpect(redirectedUrl(base));
         resultado = listar(caso);
         assertThat(registros(resultado)).hasSize(1);
         assertThat(html(resultado)).contains("<td>0</td>").doesNotContain("<td>1</td>");
+        verificarEdicaoPreenchida(caso, caso.cadastro());
 
-        mvc.perform(put(base + "/editar/0")
-                        .contentType(MediaType.APPLICATION_JSON).content(caso.edicao()))
-                .andExpect(status().isFound()).andExpect(redirectedUrl(base));
+        mvc.perform(post(base + "/editar/0")
+                        .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                        .params(caso.edicao()))
+                .andExpect(status().isFound())
+                .andExpect(redirectedUrl(base));
         resultado = listar(caso);
         assertThat(registros(resultado)).hasSize(1);
         assertThat(html(resultado)).contains(caso.alterado()).doesNotContain(caso.original());
-        assertThat(html(resultado)).doesNotContain("SegredoInicial123", "NovoSegredo456", "<form", "<script");
+        assertThat(html(resultado)).doesNotContain("SegredoInicial123", "NovoSegredo456", "<script");
+        verificarEdicaoPreenchida(caso, caso.edicao());
 
+        // O DELETE direto continua disponível no mesmo endpoint.
         mvc.perform(delete(base + "/excluir/0"))
-                .andExpect(status().isFound()).andExpect(redirectedUrl(base));
+                .andExpect(handler().methodName("excluir"))
+                .andExpect(status().isFound())
+                .andExpect(redirectedUrl(base));
         assertThat(registros(listar(caso))).isEmpty();
+        mvc.perform(get(base + "/editar/0"))
+                .andExpect(status().isFound())
+                .andExpect(redirectedUrl(base));
+    }
+
+    private void verificarEdicaoPreenchida(Caso caso, MultiValueMap<String, String> valores) throws Exception {
+        String base = "/" + caso.base();
+        MvcResult resultado = mvc.perform(get(base + "/editar/0"))
+                .andExpect(status().isOk())
+                .andExpect(view().name(caso.base() + "/editar"))
+                .andExpect(model().attribute("indice", 0))
+                .andExpect(model().attributeExists(caso.atributo()))
+                .andReturn();
+        String html = html(resultado);
+        assertThat(html).contains("action=\"" + base + "/editar/0\"", "method=\"post\"",
+                ">Salvar</button>", "href=\"" + base + "\">Voltar</a>");
+        for (String campo : valores.keySet()) {
+            assertThat(html).containsPattern("<input\\b(?=[^>]*\\bname=\"" + campo
+                    + "\")(?=[^>]*\\bvalue=\"" + Pattern.quote(valores.getFirst(campo)) + "\")[^>]*>");
+        }
+        if (caso.base().equals("usuarios")) {
+            assertThat(html).contains("type=\"password\"");
+        }
     }
 
     private MvcResult listar(Caso caso) throws Exception {

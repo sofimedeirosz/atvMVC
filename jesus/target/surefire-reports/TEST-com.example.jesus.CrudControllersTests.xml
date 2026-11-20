@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.jesus.CrudControllersTests" time="2.698" tests="6" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.jesus.CrudControllersTests" time="3.94" tests="6" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25\bin"/>
-    <property name="sun.java.command" value="C:\Users\sofia\AppData\Local\Temp\surefire1475624977849370060\surefirebooter-20261120025921764_3.jar C:\Users\sofia\AppData\Local\Temp\surefire1475624977849370060 2026-11-20T02-59-21_676-jvmRun1 surefire-20261120025921764_1tmp surefire_0-20261120025921764_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\sofia\AppData\Local\Temp\surefire18240950856783591869\surefirebooter-20261120175623380_3.jar C:\Users\sofia\AppData\Local\Temp\surefire18240950856783591869 2026-11-20T17-56-23_278-jvmRun1 surefire-20261120175623380_1tmp surefire_0-20261120175623380_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\sofia\Desktop\atividade\atvMVC\jesus\target\test-classes;C:\Users\sofia\Desktop\atividade\atvMVC\jesus\target\classes;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\4.1.2\spring-boot-starter-thymeleaf-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter\4.1.2\spring-boot-starter-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-logging\4.1.2\spring-boot-starter-logging-4.1.2.jar;C:\Users\sofia\.m2\repository\ch\qos\logback\logback-classic\1.5.38\logback-classic-1.5.38.jar;C:\Users\sofia\.m2\repository\ch\qos\logback\logback-core\1.5.38\logback-core-1.5.38.jar;C:\Users\sofia\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.25.5\log4j-to-slf4j-2.25.5.jar;C:\Users\sofia\.m2\repository\org\apache\logging\log4j\log4j-api\2.25.5\log4j-api-2.25.5.jar;C:\Users\sofia\.m2\repository\org\slf4j\jul-to-slf4j\2.0.20\jul-to-slf4j-2.0.20.jar;C:\Users\sofia\.m2\repository\jakarta\annotation\jakarta.annotation-api\3.0.0\jakarta.annotation-api-3.0.0.jar;C:\Users\sofia\.m2\repository\org\yaml\snakeyaml\2.6\snakeyaml-2.6.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-thymeleaf\4.1.2\spring-boot-thymeleaf-4.1.2.jar;C:\Users\sofia\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.5.RELEASE\thymeleaf-spring6-3.1.5.RELEASE.jar;C:\Users\sofia\.m2\repository\org\thymeleaf\thymeleaf\3.1.5.RELEASE\thymeleaf-3.1.5.RELEASE.jar;C:\Users\sofia\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\sofia\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\sofia\.m2\repository\org\slf4j\slf4j-api\2.0.20\slf4j-api-2.0.20.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-web\7.0.10\spring-web-7.0.10.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-beans\7.0.10\spring-beans-7.0.10.jar;C:\Users\sofia\.m2\repository\io\micrometer\micrometer-observation\1.17.2\micrometer-observation-1.17.2.jar;C:\Users\sofia\.m2\repository\io\micrometer\micrometer-commons\1.17.2\micrometer-commons-1.17.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-webmvc\4.1.2\spring-boot-starter-webmvc-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-jackson\4.1.2\spring-boot-starter-jackson-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-jackson\4.1.2\spring-boot-jackson-4.1.2.jar;C:\Users\sofia\.m2\repository\tools\jackson\core\jackson-databind\3.1.7\jackson-databind-3.1.7.jar;C:\Users\sofia\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\sofia\.m2\repository\tools\jackson\core\jackson-core\3.1.7\jackson-core-3.1.7.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-http-converter\4.1.2\spring-boot-http-converter-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-webmvc\4.1.2\spring-boot-webmvc-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-servlet\4.1.2\spring-boot-servlet-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-webmvc\7.0.10\spring-webmvc-7.0.10.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-aop\7.0.10\spring-aop-7.0.10.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-expression\7.0.10\spring-expression-7.0.10.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-devtools\4.1.2\spring-boot-devtools-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot\4.1.2\spring-boot-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-core\7.0.10\spring-core-7.0.10.jar;C:\Users\sofia\.m2\repository\commons-logging\commons-logging\1.3.6\commons-logging-1.3.6.jar;C:\Users\sofia\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-context\7.0.10\spring-context-7.0.10.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\4.1.2\spring-boot-autoconfigure-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\4.1.2\spring-boot-starter-tomcat-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat-runtime\4.1.2\spring-boot-starter-tomcat-runtime-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-web-server\4.1.2\spring-boot-web-server-4.1.2.jar;C:\Users\sofia\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\11.0.27\tomcat-embed-core-11.0.27.jar;C:\Users\sofia\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\11.0.27\tomcat-embed-el-11.0.27.jar;C:\Users\sofia\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\11.0.27\tomcat-embed-websocket-11.0.27.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-tomcat\4.1.2\spring-boot-tomcat-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf-test\4.1.2\spring-boot-starter-thymeleaf-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-test\4.1.2\spring-boot-starter-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-test\4.1.2\spring-boot-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\4.1.2\spring-boot-test-autoconfigure-4.1.2.jar;C:\Users\sofia\.m2\repository\com\jayway\jsonpath\json-path\2.10.0\json-path-2.10.0.jar;C:\Users\sofia\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.5\jakarta.xml.bind-api-4.0.5.jar;C:\Users\sofia\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\sofia\.m2\repository\net\minidev\json-smart\2.6.0\json-smart-2.6.0.jar;C:\Users\sofia\.m2\repository\net\minidev\accessors-smart\2.6.0\accessors-smart-2.6.0.jar;C:\Users\sofia\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\sofia\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\sofia\.m2\repository\net\bytebuddy\byte-buddy\1.18.15\byte-buddy-1.18.15.jar;C:\Users\sofia\.m2\repository\org\awaitility\awaitility\4.3.0\awaitility-4.3.0.jar;C:\Users\sofia\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\sofia\.m2\repository\org\junit\jupiter\junit-jupiter\6.0.3\junit-jupiter-6.0.3.jar;C:\Users\sofia\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.3\junit-jupiter-api-6.0.3.jar;C:\Users\sofia\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sofia\.m2\repository\org\junit\platform\junit-platform-commons\6.0.3\junit-platform-commons-6.0.3.jar;C:\Users\sofia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sofia\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.3\junit-jupiter-params-6.0.3.jar;C:\Users\sofia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.0.3\junit-jupiter-engine-6.0.3.jar;C:\Users\sofia\.m2\repository\org\junit\platform\junit-platform-engine\6.0.3\junit-platform-engine-6.0.3.jar;C:\Users\sofia\.m2\repository\org\mockito\mockito-core\5.23.0\mockito-core-5.23.0.jar;C:\Users\sofia\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.15\byte-buddy-agent-1.18.15.jar;C:\Users\sofia\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\sofia\.m2\repository\org\mockito\mockito-junit-jupiter\5.23.0\mockito-junit-jupiter-5.23.0.jar;C:\Users\sofia\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\sofia\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sofia\.m2\repository\org\springframework\spring-test\7.0.10\spring-test-7.0.10.jar;C:\Users\sofia\.m2\repository\org\xmlunit\xmlunit-core\2.11.0\xmlunit-core-2.11.0.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-webmvc-test\4.1.2\spring-boot-starter-webmvc-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-starter-jackson-test\4.1.2\spring-boot-starter-jackson-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-webmvc-test\4.1.2\spring-boot-webmvc-test-4.1.2.jar;C:\Users\sofia\.m2\repository\org\springframework\boot\spring-boot-resttestclient\4.1.2\spring-boot-resttestclient-4.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="C:\Users\sofia\AppData\Local\Temp\surefire1475624977849370060\surefirebooter-20261120025921764_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\sofia\AppData\Local\Temp\surefire18240950856783591869\surefirebooter-20261120175623380_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.1+8-LTS-27"/>
@@ -51,11 +51,11 @@
     <property name="user.dir" value="C:\Users\sofia\Desktop\atividade\atvMVC\jesus"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="27596"/>
+    <property name="PID" value="24452"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\sofia\.codex\tmp\arg0-windows\codex-arg0arZS80;C:\Users\sofia\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sofia\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\sofia\AppData\Local\Microsoft\WindowsApps;C:\Users\sofia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sofia\AppData\Local\GitHubDesktop\bin;C:\Users\sofia\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;c:\Users\sofia\.vscode\extensions\openai.chatgpt-26.1117.31558-win32-x64\bin\windows-x86_64;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\sofia\.codex\tmp\arg0-windows\codex-arg08ojMVP;C:\Users\sofia\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sofia\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\sofia\AppData\Local\Microsoft\WindowsApps;C:\Users\sofia\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sofia\AppData\Local\GitHubDesktop\bin;C:\Users\sofia\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;c:\Users\sofia\.vscode\extensions\openai.chatgpt-26.1117.31558-win32-x64\bin\windows-x86_64;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -65,12 +65,12 @@
     <property name="java.class.version" value="69.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[jesus] "/>
   </properties>
-  <testcase name="crudComJsonEIndices(Caso)[1]" classname="com.example.jesus.CrudControllersTests" time="0.917">
-    <system-out><![CDATA[02:59:22.521 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.jesus.CrudControllersTests]: CrudControllersTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:59:22.641 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.jesus.JesusApplication for test class com.example.jesus.CrudControllersTests
-02:59:22.716 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.jesus.CrudControllersTests]: CrudControllersTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:59:22.719 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.jesus.JesusApplication for test class com.example.jesus.CrudControllersTests
-02:59:22.813 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="inicioTemLinksParaAsCincoListagens" classname="com.example.jesus.CrudControllersTests" time="1.164">
+    <system-out><![CDATA[17:56:24.692 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.jesus.CrudControllersTests]: CrudControllersTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:56:24.826 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.jesus.JesusApplication for test class com.example.jesus.CrudControllersTests
+17:56:24.967 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.jesus.CrudControllersTests]: CrudControllersTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:56:24.971 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.jesus.JesusApplication for test class com.example.jesus.CrudControllersTests
+17:56:25.079 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -81,26 +81,27 @@
 
  :: Spring Boot ::                (v4.1.2)
 
-2026-11-20T02:59:23.047-03:00  INFO 27596 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : Starting CrudControllersTests using Java 25.0.1 with PID 27596 (started by sofia in C:\Users\sofia\Desktop\atividade\atvMVC\jesus)
-2026-11-20T02:59:23.048-03:00  INFO 27596 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : No active profile set, falling back to 1 default profile: "default"
-2026-11-20T02:59:23.049-03:00 DEBUG 27596 --- [jesus] [           main] o.s.boot.SpringApplication               : Loading source class com.example.jesus.JesusApplication
-2026-11-20T02:59:23.066-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.d.settings.DevToolsSettings        : Included patterns for restart : []
-2026-11-20T02:59:23.066-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.d.settings.DevToolsSettings        : Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-2026-11-20T02:59:23.066-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@87b5b49
-2026-11-20T02:59:23.697-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.example.jesus'. Automatic @Repository and @Entity scanning is enabled.
-2026-11-20T02:59:23.787-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
-2026-11-20T02:59:23.801-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-11-20T02:59:23.813-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-11-20T02:59:23.859-03:00 DEBUG 27596 --- [jesus] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-11-20T02:59:23.936-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2026-11-20T02:59:23.936-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
-2026-11-20T02:59:23.942-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-11-20T02:59:23.942-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
-2026-11-20T02:59:23.942-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
-2026-11-20T02:59:23.943-03:00  INFO 27596 --- [jesus] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-11-20T02:59:23.943-03:00  INFO 27596 --- [jesus] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-11-20T02:59:23.944-03:00  INFO 27596 --- [jesus] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2026-11-20T02:59:23.964-03:00 DEBUG 27596 --- [jesus] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-11-20T17:56:25.420-03:00  INFO 24452 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : Starting CrudControllersTests using Java 25.0.1 with PID 24452 (started by sofia in C:\Users\sofia\Desktop\atividade\atvMVC\jesus)
+2026-11-20T17:56:25.422-03:00  INFO 24452 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T17:56:25.423-03:00 DEBUG 24452 --- [jesus] [           main] o.s.boot.SpringApplication               : Loading source class com.example.jesus.JesusApplication
+2026-11-20T17:56:25.459-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.d.settings.DevToolsSettings        : Included patterns for restart : []
+2026-11-20T17:56:25.459-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.d.settings.DevToolsSettings        : Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
+2026-11-20T17:56:25.459-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f4cfd90
+2026-11-20T17:56:26.349-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.example.jesus'. Automatic @Repository and @Entity scanning is enabled.
+2026-11-20T17:56:26.478-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 29 mappings in 'requestMappingHandlerMapping'
+2026-11-20T17:56:26.500-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-11-20T17:56:26.516-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-11-20T17:56:26.581-03:00 DEBUG 24452 --- [jesus] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-11-20T17:56:26.681-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, hiddenHttpMethodFilter urls=[/*] order=-10000, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-11-20T17:56:26.681-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2026-11-20T17:56:26.689-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-11-20T17:56:26.689-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.s.f.OrderedHiddenHttpMethodFilter  : Filter 'hiddenHttpMethodFilter' configured for use
+2026-11-20T17:56:26.689-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
+2026-11-20T17:56:26.689-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
+2026-11-20T17:56:26.690-03:00  INFO 24452 --- [jesus] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-20T17:56:26.690-03:00  INFO 24452 --- [jesus] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-20T17:56:26.693-03:00  INFO 24452 --- [jesus] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-11-20T17:56:26.722-03:00 DEBUG 24452 --- [jesus] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -294,6 +295,10 @@ Positive matches:
    WebMvcAutoConfiguration#formContentFilter matched:
       - @ConditionalOnBooleanProperty (spring.mvc.formcontent.filter.enabled=true) matched (OnPropertyCondition)
       - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter matched:
+      - @ConditionalOnBooleanProperty (spring.mvc.hiddenmethod.filter.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HiddenHttpMethodFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
 
    WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
       - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
@@ -505,10 +510,6 @@ Negative matches:
       Did not match:
          - Application is deployed as a WAR file. (OnWarDeploymentCondition)
 
-   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
-      Did not match:
-         - @ConditionalOnBooleanProperty (spring.mvc.hiddenmethod.filter.enabled=true) did not find property 'spring.mvc.hiddenmethod.filter.enabled' (OnPropertyCondition)
-
    WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
       Did not match:
          - @ConditionalOnBooleanProperty (spring.mvc.problemdetails.enabled=true) did not find property 'spring.mvc.problemdetails.enabled' (OnPropertyCondition)
@@ -557,47 +558,12 @@ Unconditional classes:
 
 
 
-2026-11-20T02:59:23.969-03:00  INFO 27596 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : Started CrudControllersTests in 1.165 seconds (process running for 2.107)
-2026-11-20T02:59:23.970-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-11-20T02:59:23.971-03:00 DEBUG 27596 --- [jesus] [           main] o.s.boot.devtools.restart.Restarter      : Creating new Restarter for thread Thread[#3,main,5,main]
-2026-11-20T02:59:23.972-03:00 DEBUG 27596 --- [jesus] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-11-20T02:59:24.498-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.517-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.794-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#cadastrar(Livro)
-2026-11-20T02:59:24.847-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Livro@4feec184]
-2026-11-20T02:59:24.857-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.858-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#cadastrar(Livro)
-2026-11-20T02:59:24.859-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Livro@633a11eb]
-2026-11-20T02:59:24.859-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.860-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.860-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.870-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
-2026-11-20T02:59:24.873-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Livro@103bcc9f]
-2026-11-20T02:59:24.874-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.875-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
-2026-11-20T02:59:24.876-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.877-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
-2026-11-20T02:59:24.877-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Livro@55fe9c2f]
-2026-11-20T02:59:24.878-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.878-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
-2026-11-20T02:59:24.878-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.879-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.879-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.881-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.881-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.884-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
-2026-11-20T02:59:24.885-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.885-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.886-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.887-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
-2026-11-20T02:59:24.888-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Livro@5ac0bf84]
-2026-11-20T02:59:24.888-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.889-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.889-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.890-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
-2026-11-20T02:59:24.891-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.891-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
-2026-11-20T02:59:24.891-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:26.729-03:00  INFO 24452 --- [jesus] [           main] com.example.jesus.CrudControllersTests   : Started CrudControllersTests in 1.672 seconds (process running for 3.124)
+2026-11-20T17:56:26.731-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-11-20T17:56:26.733-03:00 DEBUG 24452 --- [jesus] [           main] o.s.boot.devtools.restart.Restarter      : Creating new Restarter for thread Thread[#3,main,5,main]
+2026-11-20T17:56:26.734-03:00 DEBUG 24452 --- [jesus] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-11-20T17:56:27.568-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#inicio()
+2026-11-20T17:56:27.592-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
 ]]></system-out>
     <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
 WARNING: A Java agent has been loaded dynamically (C:\Users\sofia\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.15\byte-buddy-agent-1.18.15.jar)
@@ -606,169 +572,259 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="crudComJsonEIndices(Caso)[2]" classname="com.example.jesus.CrudControllersTests" time="0.036">
-    <system-out><![CDATA[2026-11-20T02:59:24.908-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.908-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.912-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#cadastrar(Autor)
-2026-11-20T02:59:24.917-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Autor@24954e82]
-2026-11-20T02:59:24.917-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.918-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#cadastrar(Autor)
-2026-11-20T02:59:24.918-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Autor@5b1f5fcc]
-2026-11-20T02:59:24.919-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.919-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.919-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.922-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
-2026-11-20T02:59:24.922-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Autor@20fa5277]
-2026-11-20T02:59:24.923-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.924-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
-2026-11-20T02:59:24.924-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.925-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
-2026-11-20T02:59:24.925-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Autor@7ef9c8a5]
-2026-11-20T02:59:24.926-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.926-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
-2026-11-20T02:59:24.926-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.927-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.927-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.928-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.929-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.931-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
-2026-11-20T02:59:24.931-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.932-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.933-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.934-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
-2026-11-20T02:59:24.935-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Autor@c6244e7]
-2026-11-20T02:59:24.935-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.935-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.936-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.937-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
-2026-11-20T02:59:24.938-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.938-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
-2026-11-20T02:59:24.938-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+  <testcase name="crudComFormulariosEIndices(Caso)[1]" classname="com.example.jesus.CrudControllersTests" time="0.165">
+    <system-out><![CDATA[2026-11-20T17:56:27.974-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:27.978-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.030-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#cadastrar(Livro)
+2026-11-20T17:56:28.043-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.045-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#cadastrar(Livro)
+2026-11-20T17:56:28.045-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.046-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.047-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.063-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.066-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.072-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.074-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.075-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
+2026-11-20T17:56:28.075-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.081-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
+2026-11-20T17:56:28.083-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.084-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.084-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.086-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
+2026-11-20T17:56:28.086-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.088-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
+2026-11-20T17:56:28.089-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.089-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.091-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.094-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.095-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.103-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-11-20T17:56:28.105-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-20T17:56:28.105-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.105-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.110-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
+2026-11-20T17:56:28.110-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.111-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.111-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.113-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.114-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.116-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#editar(int, Livro)
+2026-11-20T17:56:28.117-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.117-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.118-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.120-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.120-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.124-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#excluir(int)
+2026-11-20T17:56:28.124-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.125-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#listar(Model)
+2026-11-20T17:56:28.125-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.127-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#formularioEditar(int, Model)
+2026-11-20T17:56:28.127-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
 ]]></system-out>
   </testcase>
-  <testcase name="crudComJsonEIndices(Caso)[3]" classname="com.example.jesus.CrudControllersTests" time="0.035">
-    <system-out><![CDATA[2026-11-20T02:59:24.943-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.943-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.947-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#cadastrar(Categoria)
-2026-11-20T02:59:24.949-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Categoria@29ea5e0]
-2026-11-20T02:59:24.949-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.950-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#cadastrar(Categoria)
-2026-11-20T02:59:24.950-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Categoria@1c459c28]
-2026-11-20T02:59:24.951-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.952-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.952-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.955-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
-2026-11-20T02:59:24.956-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Categoria@3d7314b3]
-2026-11-20T02:59:24.956-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.957-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
-2026-11-20T02:59:24.958-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.959-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
-2026-11-20T02:59:24.959-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Categoria@d677be9]
-2026-11-20T02:59:24.959-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.960-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
-2026-11-20T02:59:24.960-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.961-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.961-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.962-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.962-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.964-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
-2026-11-20T02:59:24.965-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.966-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.967-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.968-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
-2026-11-20T02:59:24.969-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Categoria@fefb66c]
-2026-11-20T02:59:24.970-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.971-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.971-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.973-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
-2026-11-20T02:59:24.973-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.974-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
-2026-11-20T02:59:24.974-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+  <testcase name="crudComFormulariosEIndices(Caso)[2]" classname="com.example.jesus.CrudControllersTests" time="0.064">
+    <system-out><![CDATA[2026-11-20T17:56:28.137-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.138-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.146-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#cadastrar(Autor)
+2026-11-20T17:56:28.147-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.148-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#cadastrar(Autor)
+2026-11-20T17:56:28.149-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.150-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.150-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.154-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.155-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.160-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.161-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.163-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
+2026-11-20T17:56:28.164-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.165-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
+2026-11-20T17:56:28.165-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.166-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.166-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.167-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
+2026-11-20T17:56:28.167-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.168-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
+2026-11-20T17:56:28.169-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.169-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.170-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.173-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.173-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.176-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-11-20T17:56:28.177-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-20T17:56:28.178-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.178-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.181-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
+2026-11-20T17:56:28.181-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.182-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.182-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.185-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.185-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.187-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#editar(int, Autor)
+2026-11-20T17:56:28.187-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.188-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.188-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.190-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.190-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.193-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#excluir(int)
+2026-11-20T17:56:28.194-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.194-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#listar(Model)
+2026-11-20T17:56:28.194-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.196-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.AutorController#formularioEditar(int, Model)
+2026-11-20T17:56:28.197-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
 ]]></system-out>
   </testcase>
-  <testcase name="crudComJsonEIndices(Caso)[4]" classname="com.example.jesus.CrudControllersTests" time="0.037">
-    <system-out><![CDATA[2026-11-20T02:59:24.983-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:24.984-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.988-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#cadastrar(Emprestimo)
-2026-11-20T02:59:24.990-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Emprestimo@7e0883f3]
-2026-11-20T02:59:24.991-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.992-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#cadastrar(Emprestimo)
-2026-11-20T02:59:24.993-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Emprestimo@ca60688]
-2026-11-20T02:59:24.994-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.994-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:24.995-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:24.997-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
-2026-11-20T02:59:24.997-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Emprestimo@70bc3a9c]
-2026-11-20T02:59:24.998-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:24.999-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
-2026-11-20T02:59:25.000-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.001-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
-2026-11-20T02:59:25.002-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Emprestimo@771cbd13]
-2026-11-20T02:59:25.002-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.003-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
-2026-11-20T02:59:25.003-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.004-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:25.004-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.006-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:25.006-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.008-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
-2026-11-20T02:59:25.008-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.009-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:25.009-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.010-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
-2026-11-20T02:59:25.011-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Emprestimo@229749f0]
-2026-11-20T02:59:25.011-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.012-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:25.012-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.014-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
-2026-11-20T02:59:25.014-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.014-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
-2026-11-20T02:59:25.015-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+  <testcase name="crudComFormulariosEIndices(Caso)[3]" classname="com.example.jesus.CrudControllersTests" time="0.059">
+    <system-out><![CDATA[2026-11-20T17:56:28.205-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.207-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.212-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#cadastrar(Categoria)
+2026-11-20T17:56:28.214-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.215-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#cadastrar(Categoria)
+2026-11-20T17:56:28.215-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.216-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.216-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.222-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.223-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.226-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.227-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.227-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
+2026-11-20T17:56:28.229-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.230-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
+2026-11-20T17:56:28.230-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.231-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.231-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.232-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
+2026-11-20T17:56:28.233-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.234-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
+2026-11-20T17:56:28.234-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.235-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.235-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.237-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.238-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.240-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-11-20T17:56:28.241-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-20T17:56:28.241-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.242-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.244-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
+2026-11-20T17:56:28.244-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.245-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.245-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.247-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.248-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.249-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#editar(int, Categoria)
+2026-11-20T17:56:28.250-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.250-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.251-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.252-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.253-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.254-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#excluir(int)
+2026-11-20T17:56:28.256-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.256-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#listar(Model)
+2026-11-20T17:56:28.257-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.258-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.CategoriaController#formularioEditar(int, Model)
+2026-11-20T17:56:28.259-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
 ]]></system-out>
   </testcase>
-  <testcase name="crudComJsonEIndices(Caso)[5]" classname="com.example.jesus.CrudControllersTests" time="0.032">
-    <system-out><![CDATA[2026-11-20T02:59:25.021-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.022-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.026-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#cadastrar(Usuario)
-2026-11-20T02:59:25.028-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Usuario@3e489ac1]
-2026-11-20T02:59:25.029-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.029-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#cadastrar(Usuario)
-2026-11-20T02:59:25.030-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Usuario@26888c31]
-2026-11-20T02:59:25.030-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.031-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.031-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.033-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
-2026-11-20T02:59:25.034-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Usuario@1425e531]
-2026-11-20T02:59:25.035-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.036-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
-2026-11-20T02:59:25.036-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.037-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
-2026-11-20T02:59:25.037-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Usuario@194e78af]
-2026-11-20T02:59:25.037-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.038-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
-2026-11-20T02:59:25.038-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.038-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.038-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.040-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.040-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.042-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
-2026-11-20T02:59:25.042-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.043-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.043-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.045-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
-2026-11-20T02:59:25.045-03:00 DEBUG 27596 --- [jesus] [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.jesus.model.Usuario@4fe4503a]
-2026-11-20T02:59:25.046-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.046-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.046-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2026-11-20T02:59:25.048-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
-2026-11-20T02:59:25.049-03:00 DEBUG 27596 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
-2026-11-20T02:59:25.049-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
-2026-11-20T02:59:25.049-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+  <testcase name="crudComFormulariosEIndices(Caso)[4]" classname="com.example.jesus.CrudControllersTests" time="0.068">
+    <system-out><![CDATA[2026-11-20T17:56:28.269-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.270-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.279-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#cadastrar(Emprestimo)
+2026-11-20T17:56:28.282-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.283-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#cadastrar(Emprestimo)
+2026-11-20T17:56:28.284-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.287-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.288-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.293-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.295-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.299-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.300-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.301-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
+2026-11-20T17:56:28.302-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.303-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
+2026-11-20T17:56:28.304-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.304-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.305-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.305-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
+2026-11-20T17:56:28.306-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.307-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
+2026-11-20T17:56:28.308-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.309-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.309-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.311-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.312-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.314-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-11-20T17:56:28.315-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-20T17:56:28.315-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.315-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.318-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
+2026-11-20T17:56:28.318-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.319-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.319-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.321-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.321-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.323-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#editar(int, Emprestimo)
+2026-11-20T17:56:28.323-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.324-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.325-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.327-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.327-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.328-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#excluir(int)
+2026-11-20T17:56:28.329-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.329-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#listar(Model)
+2026-11-20T17:56:28.330-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.331-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.EmprestimoController#formularioEditar(int, Model)
+2026-11-20T17:56:28.332-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
 ]]></system-out>
   </testcase>
-  <testcase name="inicioTemLinksParaAsCincoListagens" classname="com.example.jesus.CrudControllersTests" time="0.007">
-    <system-out><![CDATA[2026-11-20T02:59:25.056-03:00 DEBUG 27596 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.LivroController#inicio()
-2026-11-20T02:59:25.057-03:00 DEBUG 27596 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+  <testcase name="crudComFormulariosEIndices(Caso)[5]" classname="com.example.jesus.CrudControllersTests" time="0.061">
+    <system-out><![CDATA[2026-11-20T17:56:28.340-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.341-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.346-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#cadastrar(Usuario)
+2026-11-20T17:56:28.348-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.349-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#cadastrar(Usuario)
+2026-11-20T17:56:28.350-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.351-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.351-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.356-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.357-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.361-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.362-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.363-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
+2026-11-20T17:56:28.365-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.366-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
+2026-11-20T17:56:28.367-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.367-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.368-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.368-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
+2026-11-20T17:56:28.369-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.370-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
+2026-11-20T17:56:28.371-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.371-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.372-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.375-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.375-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.377-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2026-11-20T17:56:28.378-03:00  WARN 24452 --- [jesus] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-11-20T17:56:28.379-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.379-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.381-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
+2026-11-20T17:56:28.382-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.382-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.383-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.384-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.385-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.386-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#editar(int, Usuario)
+2026-11-20T17:56:28.388-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.388-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.389-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.391-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.391-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.393-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#excluir(int)
+2026-11-20T17:56:28.394-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
+2026-11-20T17:56:28.395-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#listar(Model)
+2026-11-20T17:56:28.395-03:00 DEBUG 24452 --- [jesus] [           main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-11-20T17:56:28.397-03:00 DEBUG 24452 --- [jesus] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.jesus.controller.UsuarioController#formularioEditar(int, Model)
+2026-11-20T17:56:28.397-03:00 DEBUG 24452 --- [jesus] [           main] o.s.web.servlet.view.RedirectView        : View name [redirect:], model {}
 ]]></system-out>
   </testcase>
 </testsuite>

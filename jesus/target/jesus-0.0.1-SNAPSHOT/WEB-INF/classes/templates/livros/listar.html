@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Livros</title>
+</head>
+<body>
+    <header>
+        <h1>Livros</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="cadastro">
+            <h2 id="cadastro">Cadastro</h2>
+            <form th:action="@{/livros/cadastrar}" method="post">
+                <fieldset>
+                    <legend>Dados do livro</legend>
+                    <p>
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                    </p>
+                    <p>
+                        <label for="autor">Autor:</label>
+                        <input type="text" id="autor" name="autor" required>
+                    </p>
+                    <p>
+                        <label for="isbn">ISBN:</label>
+                        <input type="text" id="isbn" name="isbn" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </form>
+        </section>
+        <section aria-labelledby="registros">
+            <h2 id="registros">Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Índice</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">ISBN</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="livro, item : ${livros}">
+                        <td th:text="${item.index}"></td>
+                        <td th:text="${livro.titulo}"></td>
+                        <td th:text="${livro.autor}"></td>
+                        <td th:text="${livro.isbn}"></td>
+                        <td>
+                            <a th:href="@{/livros/editar/{indice}(indice=${item.index})}">Editar</a>
+                            <form th:action="@{/livros/excluir/{indice}(indice=${item.index})}" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p th:if="${#lists.isEmpty(livros)}">Nenhum registro cadastrado.</p>
+        </section>
+    </main>
+</body>
+</html>

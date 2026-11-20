@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autores</title>
+</head>
+<body>
+    <header>
+        <h1>Autores</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="cadastro">
+            <h2 id="cadastro">Cadastro</h2>
+            <form th:action="@{/autores/cadastrar}" method="post">
+                <fieldset>
+                    <legend>Dados do autor</legend>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+                    <p>
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <input type="text" id="nacionalidade" name="nacionalidade" required>
+                    </p>
+                    <p>
+                        <label for="obrasPublicadas">Obras publicadas:</label>
+                        <input type="number" id="obrasPublicadas" name="obrasPublicadas" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </form>
+        </section>
+        <section aria-labelledby="registros">
+            <h2 id="registros">Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Índice</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Nacionalidade</th>
+                        <th scope="col">Obras publicadas</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="autor, item : ${autores}">
+                        <td th:text="${item.index}"></td>
+                        <td th:text="${autor.nome}"></td>
+                        <td th:text="${autor.nacionalidade}"></td>
+                        <td th:text="${autor.obrasPublicadas}"></td>
+                        <td>
+                            <a th:href="@{/autores/editar/{indice}(indice=${item.index})}">Editar</a>
+                            <form th:action="@{/autores/excluir/{indice}(indice=${item.index})}" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p th:if="${#lists.isEmpty(autores)}">Nenhum registro cadastrado.</p>
+        </section>
+    </main>
+</body>
+</html>

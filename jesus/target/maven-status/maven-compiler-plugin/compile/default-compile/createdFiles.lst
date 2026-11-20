@@ -1,0 +1,12 @@
+com\example\jesus\controller\CategoriaController.class
+com\example\jesus\model\Autor.class
+com\example\jesus\ServletInitializer.class
+com\example\jesus\controller\UsuarioController.class
+com\example\jesus\model\Categoria.class
+com\example\jesus\model\Livro.class
+com\example\jesus\JesusApplication.class
+com\example\jesus\model\Usuario.class
+com\example\jesus\controller\EmprestimoController.class
+com\example\jesus\controller\AutorController.class
+com\example\jesus\controller\LivroController.class
+com\example\jesus\model\Emprestimo.class

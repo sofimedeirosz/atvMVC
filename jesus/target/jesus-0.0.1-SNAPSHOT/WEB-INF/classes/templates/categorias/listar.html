@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categorias</title>
+</head>
+<body>
+    <header>
+        <h1>Categorias</h1>
+        <nav aria-label="Navegação">
+            <ul>
+                <li><a th:href="@{/livros/inicio}">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="cadastro">
+            <h2 id="cadastro">Cadastro</h2>
+            <form th:action="@{/categorias/cadastrar}" method="post">
+                <fieldset>
+                    <legend>Dados da categoria</legend>
+                    <p>
+                        <label for="genero">Gênero:</label>
+                        <input type="text" id="genero" name="genero" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </form>
+        </section>
+        <section aria-labelledby="registros">
+            <h2 id="registros">Registros</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Índice</th>
+                        <th scope="col">Gênero</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="categoria, item : ${categorias}">
+                        <td th:text="${item.index}"></td>
+                        <td th:text="${categoria.genero}"></td>
+                        <td>
+                            <a th:href="@{/categorias/editar/{indice}(indice=${item.index})}">Editar</a>
+                            <form th:action="@{/categorias/excluir/{indice}(indice=${item.index})}" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p th:if="${#lists.isEmpty(categorias)}">Nenhum registro cadastrado.</p>
+        </section>
+    </main>
+</body>
+</html>

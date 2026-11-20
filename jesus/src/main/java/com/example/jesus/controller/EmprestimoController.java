@@ -2,7 +2,6 @@ package com.example.jesus.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.example.jesus.model.Emprestimo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,8 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -27,14 +25,24 @@ public class EmprestimoController {
     }
 
     @PostMapping("/cadastrar")
-    public String cadastrar(@RequestBody Emprestimo emprestimo) {
+    public String cadastrar(@ModelAttribute Emprestimo emprestimo) {
         emprestimos.add(emprestimo);
         return "redirect:/emprestimos";
     }
 
-    @PutMapping("/editar/{indice}")
+    @GetMapping("/editar/{indice}")
+    public String formularioEditar(@PathVariable int indice, Model model) {
+        if (indice >= 0 && indice < emprestimos.size()) {
+            model.addAttribute("emprestimo", emprestimos.get(indice));
+            model.addAttribute("indice", indice);
+            return "emprestimos/editar";
+        }
+        return "redirect:/emprestimos";
+    }
+
+    @PostMapping("/editar/{indice}")
     public String editar(@PathVariable int indice,
-                         @RequestBody Emprestimo emprestimo) {
+                         @ModelAttribute Emprestimo emprestimo) {
         if (indice >= 0 && indice < emprestimos.size()) {
             emprestimos.set(indice, emprestimo);
         }
