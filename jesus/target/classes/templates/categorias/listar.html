@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorias</title>
+</head>
+<body>
+<h1>Categorias</h1>
+<p><a th:href="@{/livros/inicio}">Início</a></p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Índice</th>
+        <th>Gênero</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="categoria, item : ${categorias}">
+        <td th:text="${item.index}"></td>
+        <td th:text="${categoria.genero}"></td>
+    </tr>
+    </tbody>
+</table>
+<p th:if="${#lists.isEmpty(categorias)}">Nenhum registro cadastrado.</p>
+</body>
+</html>

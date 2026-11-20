@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Autores</title>
+</head>
+<body>
+<h1>Autores</h1>
+<p><a th:href="@{/livros/inicio}">Início</a></p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Índice</th>
+        <th>Nome</th>
+        <th>Nacionalidade</th>
+        <th>Obras publicadas</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="autor, item : ${autores}">
+        <td th:text="${item.index}"></td>
+        <td th:text="${autor.nome}"></td>
+        <td th:text="${autor.nacionalidade}"></td>
+        <td th:text="${autor.obrasPublicadas}"></td>
+    </tr>
+    </tbody>
+</table>
+<p th:if="${#lists.isEmpty(autores)}">Nenhum registro cadastrado.</p>
+</body>
+</html>

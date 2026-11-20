@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários</title>
+</head>
+<body>
+<h1>Usuários</h1>
+<p><a th:href="@{/livros/inicio}">Início</a></p>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Índice</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Usuário</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="usuario, item : ${usuarios}">
+        <td th:text="${item.index}"></td>
+        <td th:text="${usuario.nome}"></td>
+        <td th:text="${usuario.cpf}"></td>
+        <td th:text="${usuario.usuario}"></td>
+    </tr>
+    </tbody>
+</table>
+<p th:if="${#lists.isEmpty(usuarios)}">Nenhum registro cadastrado.</p>
+</body>
+</html>

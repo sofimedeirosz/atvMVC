@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="...">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <meta charset="UTF-8">
     <title>Biblioteca</title>
 </head>
 <body>
-<h1>th:text="'Sistema de Biblioteca'"</h1>
+<h1>Sistema de Biblioteca</h1>
 <nav>
     <a th:href="@{/livros}">Livros</a>
+    <a th:href="@{/autores}">Autores</a>
+    <a th:href="@{/categorias}">Categorias</a>
+    <a th:href="@{/emprestimos}">Empréstimos</a>
+    <a th:href="@{/usuarios}">Usuários</a>
 </nav>
+<p>Os dados ficam na memória e são apagados ao reiniciar a aplicação.</p>
 </body>
 </html>
